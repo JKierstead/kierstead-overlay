@@ -88,20 +88,20 @@ src_prepare() {
 		die "fixing of exec location on .desktop failed"
 
 	# Update exec location in launcher
-	sed --expression "s:@@DESTDIR@@:${DESTDIR}:" \
-		"${FILESDIR}/launcher.sh" > "${T}/launcher.sh" || die "updating of exec location in launcher failed"
+	#sed --expression "s:@@DESTDIR@@:${DESTDIR}:" \
+	#	"${FILESDIR}/launcher.sh" > "${T}/launcher.sh" || die "updating of exec location in launcher failed"
 
 	# USE seccomp in launcher
-	if use seccomp; then
-		sed --in-place --expression '/^EBUILD_SECCOMP=/s/false/true/' \
-			"${T}/launcher.sh" || die "sed failed for seccomp"
-	fi
+	#if use seccomp; then
+	#	sed --in-place --expression '/^EBUILD_SECCOMP=/s/false/true/' \
+	#		"${T}/launcher.sh" || die "sed failed for seccomp"
+	#fi
 
 	# USE wayland in launcher
-	if use wayland; then
-		sed --in-place --expression '/^EBUILD_WAYLAND=/s/false/true/' \
-			"${T}/launcher.sh" || die "sed failed for wayland"
-	fi
+	#if use wayland; then
+	#	sed --in-place --expression '/^EBUILD_WAYLAND=/s/false/true/' \
+	#		"${T}/launcher.sh" || die "sed failed for wayland"
+	#fi
 }
 
 src_install() {
