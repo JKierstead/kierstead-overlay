@@ -79,7 +79,7 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}/userpath-in-local-share.patch"
-	"${DISTDIR}/3500-mpeg-error.patch"
+#	"${DISTDIR}/3500-mpeg-error.patch"
 )
 
 src_prepare() {
