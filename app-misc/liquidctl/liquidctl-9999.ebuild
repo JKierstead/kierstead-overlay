@@ -15,7 +15,7 @@ SLOT="0"
 if [[ "${PV}" == "9999" ]]; then
         inherit git-r3
 
-        EGIT_REPO_URI="git@github.com:liquidctl/liquidctl.git"
+        EGIT_REPO_URI="https://github.com/liquidctl/liquidctl.git"
 else
         SRC_URI="https://github.com/liquidctl/liquidctl/releases/download/v${PV}/${P}.tar.gz"
         KEYWORDS="~amd64"
