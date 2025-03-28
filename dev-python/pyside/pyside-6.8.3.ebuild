@@ -205,9 +205,9 @@ BDEPEND="
 
 PATCHES=(
 	# Needs porting to newer wheel and setuptools
-	"${FILESDIR}/${PN}-6.8.2-quick-fix-build-wheel.patch"
+	"${FILESDIR}/${PN}-6.8.3-quick-fix-build-wheel.patch"
 	# References files not present in our dev-qt/qtbase
-	"${FILESDIR}/${P}-no-qtexampleicons.patch" # TODO: remove in 6.8.3
+	# "${FILESDIR}/${P}-no-qtexampleicons.patch" # TODO: remove in 6.8.3
 )
 
 # Build system duplicates system libraries. TODO: fix
