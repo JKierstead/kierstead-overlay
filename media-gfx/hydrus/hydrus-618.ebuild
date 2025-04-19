@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..12} )
+PYTHON_COMPAT=( python3_{10..13} )
 PYTHON_REQ_USE="sqlite"
 
 DOCS_BUILDER=mkdocs
@@ -60,7 +60,7 @@ RDEPEND="
 		dev-python/service-identity[${PYTHON_USEDEP}]
 		dev-python/twisted[${PYTHON_USEDEP}]
 
-		dev-python/QtPy[widgets,gui,svg,multimedia,${PYTHON_USEDEP}]
+		dev-python/qtpy[widgets,gui,svg,multimedia,${PYTHON_USEDEP}]
 		|| ( dev-python/qtpy[pyside6] )
 
 		media-libs/opencv[python,png,jpeg,${PYTHON_USEDEP}]
